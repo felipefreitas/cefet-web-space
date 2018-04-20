@@ -7,5 +7,10 @@ for (let i = buttons.length - 1; i >= 0; i--) {
 	button.addEventListener('click', function(e){
 		let paragraph = button.parentNode;
 		paragraph.classList.toggle('expandido');
+		if (button.innerText === '+') {
+			button.innerText = '-';
+		} else{
+			button.innerText = '+';
+		}
 	});
 }
